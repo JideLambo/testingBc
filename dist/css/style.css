@@ -1,0 +1,299 @@
+body {
+  font-family: 'Open Sans', "Helvetica Neue", -apple-system,BlinkMacSystemFont,'Segoe UI', Helvetica,Arial,sans-serif; }
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  z-index: 99999; }
+  nav .brand-logo {
+    position: relative; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      nav .brand-logo {
+        position: absolute; } }
+  nav ul a {
+    color: #4D4D4D;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700; }
+
+.sidenav-trigger {
+  color: #607d8b; }
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.menu-group {
+  display: flex; }
+
+.map-wrapper {
+  height: 400px;
+  overflow: hidden;
+  background-color: #C0ECAE;
+  position: relative; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .map-wrapper {
+      height: 260px; } }
+  .map-wrapper .gmap {
+    position: relative;
+    width: 100%;
+    z-index: 10; }
+  .map-wrapper .searchbar-wrapper {
+    position: absolute;
+    z-index: 99;
+    top: 130px;
+    left: 20px;
+    width: 20%; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .map-wrapper .searchbar-wrapper {
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto; } }
+    .map-wrapper .searchbar-wrapper input {
+      padding-left: 50px;
+      background-color: #ffffff;
+      border-radius: 23px;
+      border-bottom: 0;
+      margin-bottom: 0;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #808080;
+      box-shadow: 0 9px 18px 0 rgba(128, 128, 128, 0.18), 0 5px 5px 0 rgba(128, 128, 128, 0.24); }
+
+.icon {
+  display: block; }
+
+.icon-map {
+  background-image: url("../img/icon/map.svg");
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 12px;
+  margin-right: 5px; }
+
+.icon-search {
+  background-image: url("../img/icon/search.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  left: 20px; }
+
+.icon-settings {
+  background-image: url("../img/icon/settings.svg");
+  background-size: 4px 16px;
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease; }
+  .icon-settings:hover {
+    width: 5px;
+    height: 17px;
+    background-size: 5px 17px; }
+
+.icon-olympics {
+  background-image: url("../img/olympic-rings.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.olympic-logo img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px; }
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .content-wrapper {
+      display: block; } }
+
+.media-wrapper {
+  width: 75%; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .media-wrapper {
+      width: 100%; } }
+
+.stats-wrapper {
+  width: 22%;
+  margin-top: 90px; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .stats-wrapper {
+      display: none; } }
+  .stats-wrapper .analytics {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px; }
+    .stats-wrapper .analytics .analytics-header {
+      background-color: #0082C8;
+      height: 57px;
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      .stats-wrapper .analytics .analytics-header .header-text {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.9rem;
+        color: #ffffff; }
+    .stats-wrapper .analytics .analytics-body {
+      display: flex;
+      justify-content: flex-start;
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px 30px; }
+      .stats-wrapper .analytics .analytics-body ul {
+        text-align: justify;
+        margin-top: 0;
+        margin-bottom: 0; }
+        .stats-wrapper .analytics .analytics-body ul li p {
+          font-size: 1rem;
+          font-weight: 700;
+          color: #808080; }
+          .stats-wrapper .analytics .analytics-body ul li p span {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #4D4D4D;
+            margin-left: 20px; }
+
+.tag-sortby-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 24px; }
+  .tag-sortby-wrapper .tag-wrapper {
+    flex: 3; }
+    .tag-sortby-wrapper .tag-wrapper .btn {
+      background-color: #333333;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600; }
+  .tag-sortby-wrapper .dropdown-trigger {
+    color: #252628;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex; }
+    .tag-sortby-wrapper .dropdown-trigger i {
+      margin-left: 10px; }
+
+.cards-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap; }
+  .cards-wrapper .card {
+    width: 24%;
+    height: 240px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: box-shadow 0.5s ease; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .cards-wrapper .card {
+        width: 100%; } }
+    .cards-wrapper .card:hover {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5); }
+    .cards-wrapper .card .card-img {
+      height: 60%;
+      overflow: hidden;
+      border-radius: 10px 10px 0 0;
+      position: relative; }
+      .cards-wrapper .card .card-img img {
+        width: 100%;
+        display: block; }
+      .cards-wrapper .card .card-img .time {
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 4px; }
+        .cards-wrapper .card .card-img .time p {
+          color: #ffffff;
+          font-size: 0.75rem;
+          font-weight: 600;
+          margin: 0;
+          padding: 5px; }
+      .cards-wrapper .card .card-img .playBtn {
+        position: absolute;
+        background-image: url("../img/icon/play.png");
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        margin: auto;
+        opacity: 0.8;
+        right: 0;
+        top: 0;
+        width: 50px;
+        transition: all 0.5s ease; }
+        .cards-wrapper .card .card-img .playBtn:hover {
+          opacity: 1;
+          background-size: 60px 60px;
+          height: 60px;
+          width: 60px; }
+    .cards-wrapper .card .card-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 10px; }
+      .cards-wrapper .card .card-content .left-side {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start; }
+      .cards-wrapper .card .card-content .author-wrapper {
+        margin-right: 10px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
+        .cards-wrapper .card .card-content .author-wrapper img {
+          display: block; }
+      .cards-wrapper .card .card-content .author-details .author-name {
+        font-size: 1rem;
+        color: #252628;
+        font-weight: 700;
+        line-height: 1.5rem; }
+      .cards-wrapper .card .card-content .author-details .video-location {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #808080;
+        line-height: 1.3rem;
+        display: flex;
+        align-items: center; }
+      .cards-wrapper .card .card-content .author-details .video-details {
+        font-size: 0.75rem;
+        font-size: 500;
+        line-height: 1.1rem;
+        color: #808080; }
+        .cards-wrapper .card .card-content .author-details .video-details span {
+          margin-right: 2px; }
+          .cards-wrapper .card .card-content .author-details .video-details span:after {
+            content: "\00b7";
+            margin-left: 3px;
+            font-weight: 700; }
+          .cards-wrapper .card .card-content .author-details .video-details span:last-child:after {
+            content: ""; }
+
+.chip {
+  background-color: #F2F2F2;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9B9B9B;
+  border-radius: 10px; }
