@@ -1,6 +1,7 @@
 $text1: #4D4D4D;
 $text2: #252628;
 $text3: #808080;
+$text4: #4A4A4A;
 $bgColor1: #F2F2F2;
 $bgColor2: #0082C8;
 $tagTxt: #9B9B9B;
@@ -32,6 +33,18 @@ nav {
         @media only screen and (min-width: 320px) and (max-width: 480px) {
             position: absolute;
         }
+
+        span {
+            color: #B3B3B3;
+            font-size: 0.75rem;
+            display: block;
+            margin-top: -45px;
+            margin-left: 15px;
+
+            @media only screen and (min-width: 320px) and (max-width: 480px) {
+                margin-top: -40px;
+            }
+        }
     }
 
     ul {
@@ -54,7 +67,20 @@ nav {
 .menu-group {
     display: flex;
 }
+.sidenav {
+    width: 250px;
 
+    li {
+        border-bottom: 1px solid #f2f2f2;
+
+        a {
+            color: #404040;
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}
 .map-wrapper {
     height: 400px;
     overflow: hidden;
@@ -231,6 +257,10 @@ nav {
     align-items: flex-start;
     margin-top: 24px;
 
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+        border-bottom: 1px solid #f2f2f2;
+    }
+
     .tag-wrapper {
         flex: 3;
 
@@ -239,6 +269,10 @@ nav {
             color: #ffffff;
             font-size: 1rem;
             font-weight: 600;
+
+            @media only screen and (min-width: 320px) and (max-width: 480px) {
+                font-size: 0.8rem;
+            }
         }
     }
     .dropdown-trigger {
@@ -401,5 +435,167 @@ nav {
     font-weight: 600;
     color: $tagTxt;
     border-radius: 10px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+        font-size: 0.8rem;
+    }
 }
 
+.filterModal {
+    width: 40%;
+    height: 80% !important;
+    max-height: 80%;
+    border-radius: 10px;
+
+    .modal-header {
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #000000;
+            margin: 0;
+        }
+    }
+
+    .modal-content {
+
+        .searchbar {
+
+            input {
+                border: 1px solid #F2F2F2;
+                border-radius: 19px;
+                background-color: #F2F2F2;
+                color: $text3;
+                font-size: 0.95rem;
+                padding-left: 10px;
+                overflow: hidden;
+                width: calc(100% - 20px);
+            }
+        }
+
+        .tag-wrapper {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            .btn {
+                background-color: #333333;
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+
+                @media only screen and (min-width: 320px) and (max-width: 480px) {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .datepicker-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+
+            .datepicker-group {
+                margin-right: 20px;
+
+                input {
+                    background-color: #F2F2F2;
+                    border: 1px solid #F2F2F2;
+                    border-radius: 17px;
+                    padding-left: 10px;
+                    width: calc(100% - 10px);
+                }
+                label {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .toggle-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .toggleType {
+            flex: 1;
+
+            &:last-child {
+                flex: 2;
+            }
+        }
+
+    }
+
+    .modal-footer {
+        border-top: 1px solid rgba(0,0,0,0.0)!important;
+
+        .btn {
+            border-radius: 20px;
+            font-weight: 700;
+        }
+        .btn-alt {
+            color: $text3;
+            background-color: #fff;
+            border: 1px solid #9B9B9B;
+        }
+        .btn-long {
+            background-color: #7FC536;
+            width: 40%;
+        }
+    }
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4A90E2;
+    background-color: #4A90E2;
+    z-index: 0;
+    border-radius: 50%;
+}
+
+.labelHandle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $text4;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px !important;
+    background: #E1E1E1;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    background: #3D97FF;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    border-radius: 50%;
+    background: #3D97FF;
+    cursor: pointer;
+}
