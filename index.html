@@ -23,7 +23,7 @@
                         </a>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <div class="menu-group">
-                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <ul class="right hide-on-med-and-down">
                                 <li><a href="#">search</a></li>
                                 <li><a href="#">analytics</a></li>
                                 <li><a href="#">activation</a></li>
@@ -37,6 +37,12 @@
                     </div>
                 </div>
             </nav>
+            <ul id="mobile-demo" class="sidenav">
+                <li><a href="#">search</a></li>
+                <li><a href="#">analytics</a></li>
+                <li><a href="#">activation</a></li>
+                <li><a href="#">account</a></li>
+            </ul>
         </div>
 
         <main>
@@ -347,14 +353,14 @@
         </main>
 
         <!--JavaScript at end of body for optimized loading-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-        <!-- <script type="text/javascript" src="dist/js/materialize.min.js"></script> -->
         <script src="dist/js/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="dist/js/init.js"></script>
+        <!-- <script type="text/javascript" src="dist/js/materialize.min.js"></script> -->
         <script>
-          $(document).ready(function(){
-            $('.sidenav').sidenav();
-            });
-  </script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            })
+        </script>
     </body>
 </html>

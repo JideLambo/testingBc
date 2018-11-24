@@ -181,6 +181,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/dist/js/init.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dist/js/init-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dist/js/jquery.js": {
 		"ft": 64,
 		"ma": 0,
