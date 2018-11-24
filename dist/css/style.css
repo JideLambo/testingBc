@@ -22,6 +22,10 @@ nav {
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       nav .brand-logo {
         position: absolute; } }
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
+      nav .brand-logo {
+        left: 0;
+        transform: translateX(0%); } }
     @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
       nav .brand-logo {
         left: 0;
@@ -47,8 +51,15 @@ nav {
   @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
     .sidenav-trigger {
       display: none; } }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .sidenav-trigger {
+      display: none; } }
 
 @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+  .hide-on-med-and-down {
+    display: block !important; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
   .hide-on-med-and-down {
     display: block !important; } }
 
@@ -77,6 +88,9 @@ nav {
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     .map-wrapper {
       height: 260px; } }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .map-wrapper {
+      height: 280px; } }
   .map-wrapper .gmap {
     position: relative;
     width: 100%;
@@ -93,6 +107,9 @@ nav {
         margin-right: auto;
         margin-left: auto; } }
     @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+      .map-wrapper .searchbar-wrapper {
+        width: 40%; } }
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
       .map-wrapper .searchbar-wrapper {
         width: 40%; } }
     .map-wrapper .searchbar-wrapper input {
@@ -164,6 +181,9 @@ nav {
   @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
     .media-wrapper {
       width: 70%; } }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .media-wrapper {
+      width: 70%; } }
 
 .stats-wrapper {
   width: 22%;
@@ -172,6 +192,9 @@ nav {
     .stats-wrapper {
       display: none; } }
   @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+    .stats-wrapper {
+      width: 28%; } }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
     .stats-wrapper {
       width: 28%; } }
   .stats-wrapper .analytics {
@@ -199,6 +222,9 @@ nav {
       @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
         .stats-wrapper .analytics .analytics-body {
           width: 100%;
+          padding: 10px; } }
+      @media only screen and (min-width: 481px) and (max-width: 1023px) {
+        .stats-wrapper .analytics .analytics-body {
           padding: 10px; } }
       .stats-wrapper .analytics .analytics-body ul {
         text-align: justify;
@@ -260,6 +286,12 @@ nav {
     @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
       .cards-wrapper .card {
         width: 48%; } }
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
+      .cards-wrapper .card {
+        width: 48%; } }
+    @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+      .cards-wrapper .card {
+        width: 32%; } }
     .cards-wrapper .card:hover {
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5); }
     .cards-wrapper .card .card-img {
@@ -366,6 +398,9 @@ nav {
   @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
     .filterModal {
       width: 90%; } }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .filterModal {
+      width: 70%; } }
   .filterModal .modal-header {
     padding: 24px;
     display: flex;
