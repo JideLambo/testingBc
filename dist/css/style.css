@@ -22,6 +22,10 @@ nav {
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       nav .brand-logo {
         position: absolute; } }
+    @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+      nav .brand-logo {
+        left: 0;
+        transform: translateX(0%); } }
     nav .brand-logo span {
       color: #B3B3B3;
       font-size: 0.75rem;
@@ -40,6 +44,13 @@ nav {
 .sidenav-trigger {
   color: #607d8b;
   margin: 0 !important; }
+  @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+    .sidenav-trigger {
+      display: none; } }
+
+@media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+  .hide-on-med-and-down {
+    display: block !important; } }
 
 .nav-wrapper {
   display: flex;
@@ -81,6 +92,9 @@ nav {
         width: 75%;
         margin-right: auto;
         margin-left: auto; } }
+    @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+      .map-wrapper .searchbar-wrapper {
+        width: 40%; } }
     .map-wrapper .searchbar-wrapper input {
       padding-left: 50px;
       background-color: #ffffff;
@@ -233,6 +247,9 @@ nav {
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       .cards-wrapper .card {
         width: 100%; } }
+    @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+      .cards-wrapper .card {
+        width: 48%; } }
     .cards-wrapper .card:hover {
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5); }
     .cards-wrapper .card .card-img {

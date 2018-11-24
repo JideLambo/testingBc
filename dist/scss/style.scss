@@ -34,6 +34,11 @@ nav {
             position: absolute;
         }
 
+        @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+            left: 0;
+            transform: translateX(0%);
+        }
+
         span {
             color: #B3B3B3;
             font-size: 0.75rem;
@@ -60,6 +65,16 @@ nav {
 .sidenav-trigger {
     color: #607d8b;
     margin: 0 !important;
+
+    @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+        display: none;
+    }
+}
+.hide-on-med-and-down {
+
+    @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+        display: block !important;
+    }
 }
 .nav-wrapper {
     display: flex;
@@ -111,6 +126,10 @@ nav {
             width: 75%;
             margin-right: auto;
             margin-left: auto;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+            width: 40%;
         }
 
         input {
@@ -306,6 +325,10 @@ nav {
 
         @media only screen and (min-width: 320px) and (max-width: 480px) {
             width: 100%;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 812px) {
+            width: 48%;
         }
 
         &:hover {
