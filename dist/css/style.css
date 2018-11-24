@@ -329,18 +329,30 @@ nav {
 .filterModal {
   width: 40%;
   height: 80% !important;
-  max-height: 80%;
-  border-radius: 10px; }
+  max-height: 90%;
+  border-radius: 10px;
+  overflow-y: scroll; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .filterModal {
+      width: 90%; } }
   .filterModal .modal-header {
     padding: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    border-bottom: 1px solid #f5f5f5; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .filterModal .modal-header {
+        padding: 15px; } }
     .filterModal .modal-header .header-title {
       font-size: 1rem;
       font-weight: 700;
       color: #000000;
       margin: 0; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .filterModal .modal-content {
+      padding: 15px;
+      height: calc(100% - 100px); } }
   .filterModal .modal-content .searchbar input {
     border: 1px solid #F2F2F2;
     border-radius: 19px;
@@ -366,22 +378,40 @@ nav {
     display: flex;
     justify-content: flex-start;
     margin-top: 20px; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .filterModal .modal-content .datepicker-wrapper {
+        width: 100%; } }
     .filterModal .modal-content .datepicker-wrapper .datepicker-group {
       margin-right: 20px; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .filterModal .modal-content .datepicker-wrapper .datepicker-group {
+          margin-right: 10px;
+          width: 50%; } }
       .filterModal .modal-content .datepicker-wrapper .datepicker-group input {
         background-color: #F2F2F2;
         border: 1px solid #F2F2F2;
         border-radius: 17px;
         padding-left: 10px;
         width: calc(100% - 10px); }
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          .filterModal .modal-content .datepicker-wrapper .datepicker-group input {
+            width: calc(100% - 30px); } }
       .filterModal .modal-content .datepicker-wrapper .datepicker-group label {
         font-size: 1rem;
         font-weight: 600; }
   .filterModal .modal-content .toggle-wrapper {
     display: flex;
     justify-content: space-between; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .filterModal .modal-content .toggle-wrapper {
+        flex-wrap: wrap;
+        width: 100%; } }
   .filterModal .modal-content .toggleType {
     flex: 1; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .filterModal .modal-content .toggleType {
+        width: 50%;
+        flex: none; } }
     .filterModal .modal-content .toggleType:last-child {
       flex: 2; }
   .filterModal .modal-footer {
@@ -396,6 +426,9 @@ nav {
     .filterModal .modal-footer .btn-long {
       background-color: #7FC536;
       width: 40%; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .filterModal .modal-footer .btn-long {
+          width: 60%; } }
 
 [type="checkbox"].filled-in:checked + span:not(.lever):after {
   top: 0;
